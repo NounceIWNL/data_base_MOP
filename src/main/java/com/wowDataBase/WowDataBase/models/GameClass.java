@@ -1,4 +1,4 @@
-package com.wowDataBase.WowDataBase.modules;
+package com.wowDataBase.WowDataBase.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

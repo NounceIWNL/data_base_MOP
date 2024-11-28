@@ -1,6 +1,6 @@
 package com.wowDataBase.WowDataBase.controllers;
 
-import com.wowDataBase.WowDataBase.modules.GameClass;
+import com.wowDataBase.WowDataBase.models.GameClass;
 import com.wowDataBase.WowDataBase.service.GameClassService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

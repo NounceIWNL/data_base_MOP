@@ -1,22 +1,24 @@
 package com.wowDataBase.WowDataBase.service;
 
 import com.wowDataBase.WowDataBase.models.GameClass;
+import com.wowDataBase.WowDataBase.models.Tier;
 import com.wowDataBase.WowDataBase.repository.GameClassRepository;
+import com.wowDataBase.WowDataBase.repository.TierRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class GameClassService {
+public class TierService {
     @Autowired
-    private GameClassRepository gameClassRepository;
+    private TierRepository tierRepository;
 
-    public List<GameClass> getAllGameClasses() {
-        return gameClassRepository.findAll();
+    public List<Tier> getAllTiers() {
+        return tierRepository.findAll();
     }
 
-    public GameClass saveGameClass(GameClass gameClass) {
-        return gameClassRepository.save(gameClass);
+    public Tier saveTier(Tier tier) {
+        return tierRepository.save(tier);
     }
 }

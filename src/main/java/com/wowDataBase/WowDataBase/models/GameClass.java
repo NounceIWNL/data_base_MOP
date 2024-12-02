@@ -1,9 +1,6 @@
 package com.wowDataBase.WowDataBase.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "classes")
@@ -11,6 +8,8 @@ public class GameClass {
     @Id
     @GeneratedValue
     private Long id;
+
+    @Column(unique = true)
     private String name;
 
     public Long getId() {

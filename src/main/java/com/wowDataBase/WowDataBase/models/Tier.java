@@ -10,6 +10,8 @@ public class Tier {
     @Id
     @GeneratedValue
     private Long id;
+
+    @Column(unique = true)
     private String name;
 
     @JoinColumn(name="direction_id")

@@ -8,6 +8,8 @@ public class Direction {
     @Id
     @GeneratedValue
     private Long id;
+
+    @Column(unique = true)
     private String name;
 
     public Long getId() {

@@ -1,0 +1,24 @@
+body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .button-container {
+            display: flex;
+            gap: 20px;
+        }
+        .icon-button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .icon-button:hover {
+            transform: scale(1.5);
+        }
+        .icon {
+            width: 100px; /* начальный размер иконки */
+            height: 100px; /* начальный размер иконки */
+        }

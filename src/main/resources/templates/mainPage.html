@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>MOP DataBase</title>
+    <link rel="stylesheet" th:href="@{/css/test.css}">
+</head>
+<body>
+
+<div class="w3-container w3-center">
+    <h2>Welcome to the MoP Guides Database!</h2>
+    <p>This forum is designed to offer you </p>
+</div>
+<div class="button-container">
+    <button class="icon-button" th:onclick="'location.href=' + @{/classPage.html}'">
+        <img src="icon1.png" alt="Иконка 1" class="icon">
+    </button>
+    <button class="icon-button" th:onclick="'location.href=' + @{/classPage.html}'">
+        <img src="icon2.png" alt="Иконка 2" class="icon">
+    </button>
+</div>
+
+</body>
+</html>

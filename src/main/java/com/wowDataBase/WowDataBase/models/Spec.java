@@ -10,6 +10,8 @@ public class Spec {
     @Id
     @GeneratedValue
     private Long id;
+
+    @Column(unique = true)
     private String name;
 
     @JoinColumn(name="class_id")

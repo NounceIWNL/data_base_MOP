@@ -2,7 +2,7 @@ package com.wowDataBase.WowDataBase.models;
 
 import jakarta.persistence.*;
 
-import static jakarta.persistence.FetchType.LAZY;
+import static jakarta.persistence.FetchType.EAGER;
 
 @Entity
 @Table(name = "specs")
@@ -15,7 +15,7 @@ public class Spec {
     private String name;
 
     @JoinColumn(name="class_id")
-    @ManyToOne(fetch=LAZY)
+    @ManyToOne(fetch=EAGER)
     GameClass gameClass;
 
     public Long getId() {

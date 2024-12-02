@@ -2,7 +2,7 @@ package com.wowDataBase.WowDataBase.models;
 
 import jakarta.persistence.*;
 
-import static jakarta.persistence.FetchType.LAZY;
+import static jakarta.persistence.FetchType.EAGER;
 
 @Entity
 @Table(name = "tiers")
@@ -15,7 +15,7 @@ public class Tier {
     private String name;
 
     @JoinColumn(name="direction_id")
-    @ManyToOne(fetch=LAZY)
+    @ManyToOne(fetch=EAGER)
     Direction direction;
 
     public Long getId() {

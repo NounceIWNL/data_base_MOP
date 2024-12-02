@@ -2,7 +2,7 @@ package com.wowDataBase.WowDataBase.models;
 
 import jakarta.persistence.*;
 
-import static jakarta.persistence.FetchType.LAZY;
+import static jakarta.persistence.FetchType.EAGER;
 
 @Entity
 @Table(name = "main_guides")
@@ -14,12 +14,12 @@ public class MainGuide {
 
 
     @JoinColumn(name = "spec_id")
-    @ManyToOne(fetch=LAZY)
+    @ManyToOne(fetch=EAGER)
     Spec spec;
 
 
     @JoinColumn(name = "direction_id")
-    @ManyToOne(fetch=LAZY)
+    @ManyToOne(fetch=EAGER)
     Direction direction;
 
 
